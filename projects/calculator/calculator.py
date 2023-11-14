@@ -1,6 +1,6 @@
 def add(input_1, input_2):
     result = input_1 + input_2
-    print(f"${str(input_1)} + ${str(input_2)} = ${str(result)}") 
+    print(f"{str(input_1)} + {str(input_2)} = {str(result)}") 
 
 
 def sub(input_1, input_2):
@@ -49,9 +49,8 @@ while True:
     elif calc_prompt == "E":
          print("Progam successfully ended :) ")
          break
-    elif not calc_prompt ==  "A" or not calc_prompt == "S" or calc_prompt == "D" or not calc_prompt == "M" or not calc_prompt == "E":
+    else:
          print("Prompt not recognized :(!")
-         print(prompts)
          print(f"Please enter new prompt! \n {prompts}")
 
 
